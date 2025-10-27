@@ -1,0 +1,8 @@
+# Partir de notre image de base Befunge
+FROM whanos-befunge:base
+
+# Copier les fichiers de l'application
+COPY . .
+
+# Commande à exécuter lorsque le conteneur démarre
+CMD ["pyfunge", "app/main.bf"]

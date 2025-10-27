@@ -1,0 +1,11 @@
+# Partir de notre image de base C
+FROM whanos-c:base
+
+# Copier les fichiers de l'application
+COPY . .
+
+# Compiler l'application
+RUN make
+
+# Commande à exécuter lorsque le conteneur démarre
+CMD ["./compiled-app"]

@@ -1,0 +1,11 @@
+# Partir de notre image de base JavaScript
+FROM whanos-javascript:base
+
+# Copier les fichiers de l'application
+COPY . .
+
+# Installer les dépendances listées dans package.json
+RUN npm install
+
+# Commande à exécuter lorsque le conteneur démarre
+CMD ["node", "."]

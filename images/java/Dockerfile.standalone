@@ -1,0 +1,11 @@
+# Partir de notre image de base Java
+FROM whanos-java:base
+
+# Copier les fichiers de l'application
+COPY . .
+
+# Compiler l'application et la packager en .jar
+RUN mvn package
+
+# Commande à exécuter lorsque le conteneur démarre
+CMD ["java", "-jar", "target/app.jar"]
