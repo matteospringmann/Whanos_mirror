@@ -1,0 +1,4 @@
+# Image Node.js officielle
+
+FROM node:20.9-slim
+WORKDIR /app

@@ -1,0 +1,7 @@
+# Partir d'une image Python
+FROM python:3.12-slim
+
+# Installation de l'interpréteur Befunge-93
+RUN pip install --no-cache-dir pyfunge
+
+WORKDIR /app

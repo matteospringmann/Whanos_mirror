@@ -1,0 +1,4 @@
+# Image qui contient le JDK et Maven pour la compilation
+
+FROM maven:3.9-eclipse-temurin-21
+WORKDIR /app

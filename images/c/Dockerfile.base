@@ -1,0 +1,4 @@
+# Image officielle GCC qui contient tous les outils de build pour C
+
+FROM gcc:13.2
+WORKDIR /app
